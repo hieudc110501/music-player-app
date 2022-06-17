@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayoutMusic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box_selected"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_song"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_about"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <LinearLayout
+        android:id="@+id/info_song"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/img_song"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/txt_singer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/img_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/info_song"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/img_button"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:src="@drawable/ic_favorite1"
+            tools:ignore="TouchTargetSizeCheck"></ImageButton>
+    </LinearLayout>
+
+
+</RelativeLayout>
